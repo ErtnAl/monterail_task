@@ -78,12 +78,18 @@
                 upvote: 10,
                 upvote1: 9,
                 upvote2: 1,
-                upvote3: 6
+                upvote3: 6,
+                showModal: false
             }
         },
         props: ['question'],
         components: {
             UserModal
+        },
+        methods: {
+            closeDialog () {
+                this.showModal = false
+            }
         }
     }
 </script>
